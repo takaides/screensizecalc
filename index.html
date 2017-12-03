@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Screen Size Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Screen Size Calculator</h1>
+    </header>
+    <main>
+    <section>
+    <h3>This will calculate very rough screen sizes based on diagonal screen measurements and known screen ratios</h3>
+    </section>
+    <section>
+      <div class="calc">
+        <select id="ratioValue" name="ratioValue">
+          <option value="16:9">16:9 (Default)</option>
+          <option value="18:9">18:9</option>
+          <option value="16:10">16:10</option>
+          <option value="21:9">21:9</option>
+          <option value="256:135">Non-16:9 4K</option>
+          <option value="5:4">5:4</option>
+          <option value="4:3">4:3</option>
+          <option value="3:2">3:2 Old iPhones</option>
+
+        </select>
+        <input type="text" id="diagValue" name="diagValue" placeholder="Diagonal" value="">
+        <p id="heightValue">Height</p>
+        <p id="widthValue">Width</p>
+        <button type="button" id="calculate" name="calculate">Calculate</button>
+      </div>
+    </section>
+
+
+
+
+  </main>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
+</html>
